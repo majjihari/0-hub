@@ -1006,4 +1006,6 @@ def listen(id):
 #
 ######################################
 print("[+] listening")
-app.run(host="0.0.0.0", port=5555, debug=config['debug'], threaded=True)
+context = ('/home/hari/tmp/0-hub-deployment/python/ogmesh_crt.pem', '/home/hari/tmp/0-hub-deployment/python/ogmesh_pk.pem')
+#app.run(host="0.0.0.0", port=5556, debug=config['debug'], threaded=True, ssl_context='adhoc')
+app.run(host="0.0.0.0", port=5556, debug=config['debug'], threaded=True, ssl_context=context)
