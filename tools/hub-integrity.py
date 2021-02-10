@@ -1,7 +1,8 @@
 import redis
 import sys
 
-r = redis.Redis("10.241.0.232", 9901)
+# r = redis.Redis("10.241.0.232", 9901)
+r = redis.Redis("62.150.178.136", 9901)
 info = redis.client.parse_info(r.execute_command("NSINFO minio"))
 
 entries = info['entries']

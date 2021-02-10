@@ -60,7 +60,8 @@ capnp() {
 }
 
 zeroflist() {
-    git clone -b development https://github.com/threefoldtech/0-flist
+#    git clone -b development https://github.com/threefoldtech/0-flist
+    git clone -b development https://github.com/majjihari/0-flist
     pushd 0-flist
 
     pushd libflist
@@ -75,7 +76,8 @@ zeroflist() {
 }
 
 hub() {
-    git clone -b playground https://github.com/threefoldtech/0-hub $1
+#    git clone -b playground https://github.com/threefoldtech/0-hub $1
+    git clone -b playground https://github.com/majjihari/0-hub $1
 
     cp $1/python/config.py.sample $1/python/config.py
 
