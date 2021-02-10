@@ -77,7 +77,7 @@ zeroflist() {
 
 hub() {
 #    git clone -b playground https://github.com/threefoldtech/0-hub $1
-    git clone -b playground https://github.com/majjihari/0-hub $1
+    git clone -b master https://github.com/majjihari/0-hub $1
 
     cp $1/python/config.py.sample $1/python/config.py
 
