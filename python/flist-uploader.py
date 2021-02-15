@@ -223,6 +223,11 @@ def flist_merge_data(sources, target):
 # ROUTING ACTIONS
 #
 ######################################
+
+@app.route('/_iyo_callback')
+def iyo_callback():
+    return internalRedirect("users.html")
+
 @app.route('/logout')
 def logout():
     hub.security.invalidate()
